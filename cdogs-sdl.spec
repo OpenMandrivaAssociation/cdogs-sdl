@@ -8,6 +8,7 @@ URL:            http://cxong.github.io/cdogs-sdl
 Source0:        https://github.com/cxong/cdogs-sdl/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:  ccache
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(libenet)
 BuildRequires:  pkgconfig(physfs)
@@ -33,7 +34,7 @@ rm -rf src/cdogs/enet
 %cmake \
   -DCDOGS_BIN_DIR=%{_gamesbindir} \
   -DCDOGS_DATA_DIR=%{_gamesdatadir}/%{name}/ \
-  -DOpenGL_GL_PREFERENCE=GLVND
+  -DOpenGL_GL_PREFERENCE=GLVND \
   -DUSE_SHARED_ENET=ON
 %make_build
 
