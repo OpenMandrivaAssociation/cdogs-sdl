@@ -33,11 +33,12 @@ rm -rf src/cdogs/enet
 %cmake \
   -DCDOGS_BIN_DIR=%{_gamesbindir} \
   -DCDOGS_DATA_DIR=%{_gamesdatadir}/%{name}/ \
+  -DOpenGL_GL_PREFERENCE=GLVND
   -DUSE_SHARED_ENET=ON
-%cmake_build
+%make_build
 
 %install
-%cmake_install
+%make_install -C build
 
 %files
 %doc README.md doc/AUTHORS doc/README_DATA.md doc/original_readme.txt
