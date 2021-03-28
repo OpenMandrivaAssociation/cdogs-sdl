@@ -6,6 +6,7 @@ Group:          Games/Arcade
 License:        GPLv2 and BSD and CC0 and CC-BY and CC-BY-SA
 URL:            http://cxong.github.io/cdogs-sdl
 Source0:        https://github.com/cxong/cdogs-sdl/archive/%{version}/%{name}-%{version}.tar.gz
+Patch0:         cdogs-sdl-disable-werror.patch
 
 BuildRequires:  cmake
 BuildRequires:  ccache
