@@ -1,0 +1,39 @@
+From 5a388412284d80608517533e3b4e7b68b2305e30 Mon Sep 17 00:00:00 2001
+From: Cong <congusbongus@gmail.com>
+Date: Tue, 25 May 2021 20:13:42 +1000
+Subject: [PATCH] Remove duplicate gConfig #706
+
+---
+ src/tests/json_test.c   | 1 -
+ src/tests/player_test.c | 6 ------
+ 2 files changed, 7 deletions(-)
+
+diff --git a/src/tests/json_test.c b/src/tests/json_test.c
+index 027a49b56..92c2bcfe8 100644
+--- a/src/tests/json_test.c
++++ b/src/tests/json_test.c
+@@ -35,7 +35,6 @@ bool ConfigIsOld(FILE *f)
+ }
+ int PicManagerGetPic(void) { return 0; }
+ int StrWeaponClass(void) { return 0; }
+-Config gConfig;
+ int gPicManager;
+ 
+ 
+diff --git a/src/tests/player_test.c b/src/tests/player_test.c
+index 57a4e7062..dbae46129 100644
+--- a/src/tests/player_test.c
++++ b/src/tests/player_test.c
+@@ -11,12 +11,6 @@
+ #include <player_template.h>
+ #include <utils.h>
+ 
+-// Stubs
+-Campaign gCampaign;
+-NetClient gNetClient;
+-PlayerTemplates gPlayerTemplates;
+-Config gConfig;
+-
+ 
+ FEATURE(assign_unused, "Assign unused input device")
+ 	// This feature is used to assign input devices to players, before the game
