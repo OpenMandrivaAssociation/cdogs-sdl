@@ -49,5 +49,5 @@ rm -rf src/cdogs/enet
 %{_datadir}/metainfo/io.github.cxong.%{name}.appdata.xml
 %{_gamesbindir}/%{name}
 %{_gamesbindir}/%{name}-editor
-#{_gamesdatadir}/%{name}/
+%{_gamesdatadir}/%{name}/
 %{_iconsdir}/hicolor/*/apps/io.github.cxong.%{name}.png
