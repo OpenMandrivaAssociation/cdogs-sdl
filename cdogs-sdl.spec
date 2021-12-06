@@ -8,6 +8,8 @@ URL:            http://cxong.github.io/cdogs-sdl
 Source0:        https://github.com/cxong/cdogs-sdl/archive/%{version}/%{name}-%{version}.tar.gz
 Patch0:         cdogs-sdl-disable-werror.patch
 Patch1:         fix-build.patch
+# https://github.com/cxong/cdogs-sdl/issues/729
+Patch2:         fix-source-file-directory.patch
 
 BuildRequires:  cmake
 BuildRequires:  ccache
