@@ -1,6 +1,6 @@
 Name:           cdogs-sdl
-Version:        1.4.1
-Release:        2
+Version:        1.4.2
+Release:        1
 Summary:        Open source, classic overhead run-and-gun game
 Group:          Games/Arcade
 License:        GPLv2 and BSD and CC0 and CC-BY and CC-BY-SA
