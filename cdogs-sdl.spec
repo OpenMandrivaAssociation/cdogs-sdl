@@ -11,6 +11,7 @@ Patch1:         fix-build.patch
 # https://github.com/cxong/cdogs-sdl/issues/729
 #Patch2:         fix-source-file-directory.patch
 
+BuildRequires:  make
 BuildRequires:  cmake
 BuildRequires:  ccache
 BuildRequires:  pkgconfig(gtk+-3.0)
